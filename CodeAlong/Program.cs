@@ -8,7 +8,7 @@ namespace CodeAlong
         static void Main(string[] args)
         {
             //Övning 1
-
+            /*
             //Ett sätt
             int[] arrayOfNumbers = new int[5] { 13, 22, 3, 93, 1 };
 
@@ -41,8 +41,39 @@ namespace CodeAlong
             Console.WriteLine(string.Join(',', firstOne.Reverse()));
 
             //Hello
+            */
 
+            //Övning 3
+            string[] stringArray = new string[]
+            {
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            };
+
+            string str;
+            int choice;
             
+            do
+            {
+                Console.WriteLine("Select a number from 1-12");
+                str = Console.ReadLine();
+                choice = Convert.ToInt32(str);
+                if(choice < 12)
+                {
+                Console.WriteLine(stringArray[choice - 1]);
+                }
+            } while (choice < 12 );
+
 
 
         }
